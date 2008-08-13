@@ -4,6 +4,9 @@
 # Code is not reloaded between requests
 config.cache_classes = true
 
+# Use git to set the Rails asset_id based on the deployed commit
+ENV['RAILS_ASSET_ID'] = File.read(RAILS_ROOT + '/.git/refs/heads/deploy').chomp
+
 # Use a different logger for distributed setups
 # config.logger = SyslogLogger.new
 
