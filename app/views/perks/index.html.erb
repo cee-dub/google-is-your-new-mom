@@ -1,0 +1,18 @@
+<h1>What has Google done for you lately?</h1>
+
+<table border="0" cellspacing="5" cellpadding="5">
+<%- @perks.each do |perk| -%>
+  <tr>
+    <td<%= ' style="color:#999;"' unless perk.published? %>>Google <%=h perk.phrase %></td>
+    <td>
+      <small>
+        <%= link_to 'Edit', edit_perk_path(perk) %> |
+        <%= link_to 'Destroy', perk, :confirm => 'Are you sure?', :method => :delete %>
+      </small>
+    </td>
+  </tr>
+<%- end -%>
+</table>
+
+<br />
+<%= link_to 'New perk', new_perk_path %>

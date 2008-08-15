@@ -1,0 +1,11 @@
+<h1>Editing perk</h1>
+
+<% form_for(@perk) do |f| %>
+<%= render :partial => 'form', :locals => {:form => @perk} %>
+<p>
+  <%= f.submit "Update" %>
+</p>
+<% end %>
+
+<%= link_to 'Show', @perk %> |
+<%= link_to 'Back', perks_path %>

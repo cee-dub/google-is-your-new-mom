@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+vegan_donut:
+  phrase: cooked you a gourmet, vegan donut for breakfast
+  published: true
+
+mom:
+  phrase: is not your mom
+  published: false
+
+useless:
+  phrase: is useless
+  published: false
