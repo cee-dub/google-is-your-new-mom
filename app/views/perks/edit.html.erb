@@ -1,11 +1,8 @@
-<h1>Editing perk</h1>
+<h2>Fix me up:</h2>
 
-<% form_for(@perk) do |f| %>
+<%- form_for(@perk) do |f| -%>
 <%= render :partial => 'form', :locals => {:form => @perk} %>
-<p>
-  <%= f.submit "Update" %>
-</p>
-<% end %>
+<p><%= f.submit "Update" %></p>
+<%- end -%>
 
-<%= link_to 'Show', @perk %> |
-<%= link_to 'Back', perks_path %>
+<p><%= link_to 'Editor', editor_perks_url %></p>

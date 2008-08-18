@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :perks
+  map.resources :perks, :collection => {:editor => :get}
 
   # The priority is based upon order of creation: first created -> highest priority.
 

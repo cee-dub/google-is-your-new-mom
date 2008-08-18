@@ -1,0 +1,56 @@
+body {
+background-color: #fff;
+color: #333;
+font: 76% verdana,helvetica,arial,sans-serif;
+line-height: 1.4em;
+}
+p,ol,ul,td {
+font-size: 1em;
+}
+
+.g {
+color: #75D4FA;
+}
+.o1, .e {
+color: #FFB1D9;
+}
+.o2 {
+color: #EDD859;
+}
+.l {
+color: #A5DD3E;
+}
+pre {
+background-color: #eee;
+padding: 10px;
+font-size: 11px;
+}
+a {
+color: #000;
+}
+a:visited {
+color: #666;
+}
+a:hover {
+color: #fff;
+background-color: #000;
+}
+p.perk {
+color: #666666;
+font: bold 120px/1.1 helvetica,arial,sans-serif;
+margin: 8px;
+text-transform: uppercase;
+}
+p.perk a:link,
+p.perk a:visited,
+p.perk a:hover,
+p.perk a:active,
+p.perk b {
+text-decoration: none;
+font-weight: bold;
+}
+p.perk a:hover,
+p.perk a:active {
+color: inherit;
+background-color: inherit;
+}

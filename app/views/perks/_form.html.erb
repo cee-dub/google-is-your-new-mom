@@ -1,12 +1,12 @@
 <%- fields_for(form) do |f| -%>
   <%= f.error_messages %>
 
-  <p>
-    <b><%= f.label :phrase, 'Google' %></b>
+  <div>
+    <strong><%= f.label :phrase, 'Google' %></strong>
     <%= f.text_field :phrase, :size => 140 %>
-  </p>
-  <p>
+  </div>
+  <div>
     <%= f.check_box :published %>
     <%= f.label :published, 'Published?' %>
-  </p>
+  </div>
 <%- end -%>
