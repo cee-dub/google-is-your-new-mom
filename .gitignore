@@ -4,3 +4,4 @@ tmp/**/*
 public/cache/**/*
 doc/api
 doc/app
+config/deploy.rb
