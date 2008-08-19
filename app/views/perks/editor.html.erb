@@ -8,7 +8,7 @@
 <table border="0" cellspacing="5" cellpadding="5">
 <%- @perks.each do |perk| -%>
   <tr>
-    <td<%= ' style="color:#999;"' unless perk.published? %>>Google <%=h perk.phrase %></td>
+    <td<%= ' style="color:#999;"' unless perk.published? %>><b>Google</b> <%=h perk.phrase %></td>
     <td>
       <small>
         <%= link_to 'Edit', edit_perk_path(perk) %> |

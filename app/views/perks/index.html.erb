@@ -1,7 +1,9 @@
 <p class="perk">
-  <%= link_to %Q[<b class="g">G</b><b class="o1">o</b><b class="o2">o</b><b class="g">g</b><b class="l">l</b><b class="e">e</b>
-      #{h @perk.phrase}],
-    root_path %>
+  <%= link_to "#{colored_google} #{h @perk.phrase}", root_path %>
 </p>
+
+<div id="inspiration">
+  Inspired by: <a href="http://barackobamaisyournewbicycle.com/">Barack Obama is Your New Bicycle</a> (<a href="http://icanhaz.com/new_bicycle">book</a><img src="http://www.assoc-amazon.com/e/ir?t=ceedubinfo-20&l=as2&o=1&a=1592404162" width="1" height="1" alt="" />)
+</div>
 
 <%= analytics -%>
