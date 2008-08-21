@@ -1,5 +1,6 @@
 log/*.log
 tmp/**/*
+tmp/*.sql.gz
 .DS_Store
 public/cache/**/*
 doc/api
