@@ -7,7 +7,7 @@
   <title>Google is your new mom</title>
   <%= stylesheet_link_tag "css" %>
 </head>
-<body>
+<body <%= @body_class ? %Q{ class="#{@body_class}"} : '' %>>
   <%= yield -%>
   <%= blur_links -%>
 </body>

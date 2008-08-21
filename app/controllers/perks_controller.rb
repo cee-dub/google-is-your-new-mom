@@ -1,4 +1,6 @@
 class PerksController < ApplicationController
+  before_filter :set_body_class, :except => [:index, :update, :destroy]
+  
   def editor
     @perks = Perk.find(:all, :order => "updated_at desc")
   end
@@ -40,5 +42,10 @@ class PerksController < ApplicationController
     @perk.destroy
 
     redirect_to(editor_perks_url)
+  end
+  
+  private
+  def set_body_class
+    @body_class = 'editor'
   end
 end
