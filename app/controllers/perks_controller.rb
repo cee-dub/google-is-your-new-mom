@@ -2,7 +2,7 @@ class PerksController < ApplicationController
   before_filter :set_body_class, :except => [:index, :update, :destroy]
   
   def editor
-    @perks = Perk.find(:all, :order => "updated_at desc")
+    @perks = Perk.all(:order => "updated_at desc")
   end
   
   def index

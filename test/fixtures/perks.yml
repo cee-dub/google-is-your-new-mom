@@ -11,3 +11,7 @@ mom:
 useless:
   phrase: is useless
   published: false
+  
+prius:
+  phrase: gave you $5000 towards your new Prius
+  published: true
