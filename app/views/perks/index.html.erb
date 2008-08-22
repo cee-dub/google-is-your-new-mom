@@ -1,3 +1,4 @@
+<%- cache @perk.cache_key do -%>
 <p class="perk">
   <%= link_to "#{colored_google} #{sanitize @perk.phrase}", root_path, :title => 'Click for another...' %>
 </p>
@@ -8,3 +9,4 @@
   (<%= link_to "The book", "http://icanhaz.com/new_bicycle" %>)
   <img src="http://www.assoc-amazon.com/e/ir?t=ceedubinfo-20&amp;l=as2&amp;o=1&amp;a=1592404162" width="1" height="1" alt="" style="display:none" />
 </div>
+<%- end -%>
