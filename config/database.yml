@@ -12,6 +12,7 @@ development:
 
 production:
   database: google-is-your-new-mom_production
+  password: 55zxcv55
   <<: *DEFAULTS
 
 # Do not set this db to the same as development or production.
