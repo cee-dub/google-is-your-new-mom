@@ -5,5 +5,5 @@ tmp/*.sql.gz
 public/cache/**/*
 doc/api
 doc/app
+config/deploy/*
 config/deploy.rb
-config/analytics.rb
