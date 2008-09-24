@@ -29,13 +29,15 @@ text-transform: uppercase;
 }
 a:link,
 a:visited,
-a:hover,
 a:active,
 b {
 color: #888;
 text-decoration: none;
 font-weight: bold;
 border: none;
+}
+a:hover {
+color: #555;
 }
 #inspiration {
 position: absolute;
